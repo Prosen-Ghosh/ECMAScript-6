@@ -1,15 +1,28 @@
 # ECMAScript 6
 ### Constants
 
-**`const` ensures that the value of the variable never changes**
+`const` **ensures that the value of the variable never changes**
 ##### Example 1
-#
+
 ```JavaScript
 const PI = 3.141593;
 console.log(PI); // 3.141593
 ```
+
+##### Example 2
+
+```JavaScript
+function test(){
+	const a = 1;
+	if(true){
+		const a = 2;
+		console.log(a); // 2
+	}
+	console.log(a); // 1
+}
+```
 ### Scoping
-**At runtime, any variable that is declared using `var` keyword will be hoisted up to the top of the executing context.**
+**At runtime, any variable that is declared using** `var` **keyword will be hoisted up to the top of the executing context.**
 
 ```JavaScript
 function test(){
@@ -22,7 +35,7 @@ function test(){
 }
 test();
 ```
-**With the `let` keyword, this is now different. `let` keyword not going to hoisted the variable.**
+**With the** `let` **keyword, this is now different.** `let` **keyword not going to hoisted the variable.**
 ```JavaScript
 function test(){
 	var a = true;
@@ -34,7 +47,7 @@ function test(){
 }
 test();
 ```
-**The following example demonstrates how the let operator works inside `for`-loops:**
+**The following example demonstrates how the let operator works inside** `for`**-loops:**
 ```JavaScript
 var cart = [
     {
