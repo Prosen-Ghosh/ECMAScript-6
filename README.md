@@ -1,14 +1,14 @@
 # ECMAScript 6
 ### Constants
 
-`const` **ensures that the value of the variable never changes**
+`const` **ensures that the value of the variable never changes. An initializer for a constant is required.**
 ##### Example 1
 
 ```JavaScript
 const PI = 3.141593;
 console.log(PI); // 3.141593
 ```
-
+**This declaration creates a constant whose scope can be either global or local to the block in which it is declared.**
 ##### Example 2
 
 ```JavaScript
